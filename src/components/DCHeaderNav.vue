@@ -2,15 +2,11 @@
   <header>
         <div class="container">
             <div class="d-flex justify-content-between ">
-                <div class="w-25"><img src="../assets/img/dc-logo.png" alt=""></div>
+                <div class=""><img src="../assets/img/dc-logo.png" alt=""></div>
                 <div>
                     <ul>
-                        <li>
-                            <a href="#">CHARACTERS</a>
-                        </li>
-                        <li class="active">
-                            <a href="#">COMICS</a>
-                        </li>
+                        <li><a href="#">CHARACTERS</a></li>
+                        <li class="active"><a href="#">COMICS</a></li>
                         <li><a href="#">MOVIES</a></li>
                         <li><a href="#">TV</a></li>
                         <li><a href="#">GAMES</a></li>
@@ -36,30 +32,38 @@ export default {
 <style lang="scss" scoped>
 @import "../styles/variables.scss";
 
-  header{
-    background-color: $colorHeader;
-  }
+header{
+  background-color: $colorHeader;
+}
 
-  img{
-    height: 70%;
-    padding: 10px;
-  }
+.ms_wisth{
+  height: 10px;
+}
 
+img{
+  width: 80%;
+  padding: 10px 0px 15px 0px;
+}
 
+ul{
+margin: 0;
+}
 
-  li{
-    display: inline-block;
-    padding: 30px 0px;
-    margin: 0px 10px;
-    font-size: 10px;
+li{
+  display: inline-block;
+  padding: 39px 0px 49px 0px;
+  margin-left: 10px;
+  line-height: normal;
+  font-size: 12px;
+}
 
-  }
-    .active{
-    border-bottom:3px solid $colorplus;
-    }
+.active{
+  border-bottom:4px solid $colorplus;
+  line-height: normal;
+}
 
-  a{
-    text-decoration: none;
-    color: black;
-  }
+a{
+  text-decoration: none;
+  color: black;
+}
 </style>
