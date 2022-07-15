@@ -1,28 +1,30 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <DCHeaderNav/>
+    <HeaderLink/>
+    <DCMain/>
+    <DCFooter/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import DCMain from './components/DCMain.vue'
+import DCHeaderNav from './components/DCHeaderNav.vue'
+import HeaderLink from './components/HeaderLink.vue'
+import DCFooter from './components/DCFooter.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    DCHeaderNav,
+    HeaderLink,
+    DCMain,
+    DCFooter,
   }
 }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  @import "~bootstrap/scss/bootstrap.scss";
+  @import "./styles/variables.scss";
 </style>
