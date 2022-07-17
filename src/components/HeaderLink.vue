@@ -1,5 +1,5 @@
 <template>
-  <div class="ms_background p-5">
+  <div class="ms_background-black p-5">
     <div class="container">
             <div><a href="#"> --> Content goes here <-- </a></div>
     </div>
@@ -15,7 +15,7 @@ export default {
 <style lang="scss" scoped>
 @import "../styles/variables.scss";
 
-.ms_background{
+.ms_background-black{
     background-color: $colorMain;
 }
 

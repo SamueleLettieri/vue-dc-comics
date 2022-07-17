@@ -2,15 +2,17 @@
   <div id="app">
     <DCHeaderNav/>
     <HeaderLink/>
+    <DCMainExtension/>
     <DCMain/>
     <DCFooter/>
   </div>
 </template>
 
 <script>
-import DCMain from './components/DCMain.vue'
 import DCHeaderNav from './components/DCHeaderNav.vue'
 import HeaderLink from './components/HeaderLink.vue'
+import DCMainExtension from './components/DCMainExtension.vue'
+import DCMain from './components/DCMain.vue'
 import DCFooter from './components/DCFooter.vue'
 
 export default {
@@ -18,6 +20,7 @@ export default {
   components: {
     DCHeaderNav,
     HeaderLink,
+    DCMainExtension,
     DCMain,
     DCFooter,
   }
