@@ -8,16 +8,17 @@
 <script>
 export default {
     props:{
-        "imageUrl": string,
-        "title": string,
+        "imageUrl": String,
+        "title": String,
     }
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 
 .ms_margin{
-  margin: 0 13px;
+   width: calc((100% / 6) - 30px);
+  margin: 0 15px;
   margin-bottom: 60px;
 }
 
