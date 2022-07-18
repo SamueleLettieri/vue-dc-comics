@@ -2,9 +2,9 @@
   <div>
     <div class="ms_background-img">
     </div>  
-    <div class="ms_background-color p-2">
+    <div class="ms_background-color p-4">
       <div class="container">
-        <h3>CURRENT SERIES</h3>
+        <h3 class="ms_boxt-text">CURRENT SERIES</h3>
         <div class="ms_box">
 
           <DCCard v-for="(serie, index) in DCSeries" :key="index" 
@@ -16,7 +16,7 @@
             <h5 class="ms_titolo">ACTION COMICS</h5>
           </div>-->
         </div>
-        <div></div>
+        <div class="text-center"><a class="ms_boxt-text" href="#"><strong>LOAD MORE</strong> </a></div>
       </div>  
     </div>
   </div>    
@@ -128,12 +128,16 @@ export default {
 }
 
 h3{
+  position: relative;
+  bottom: 45px;
+}
+
+.ms_boxt-text{
   color: white;
   background-color: $colorplus;
   display: inline-block;
   padding: 7px 25px;
-  position: relative;
-  bottom: 45px;
+  text-decoration: none;
 }
 
 .ms_box{
