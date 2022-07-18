@@ -24,6 +24,7 @@
 
 <script>
 export default {
+
 }
 
 </script >
@@ -34,10 +35,6 @@ export default {
 
 header{
   background-color: $colorHeader;
-}
-
-.ms_wisth{
-  height: 10px;
 }
 
 img{

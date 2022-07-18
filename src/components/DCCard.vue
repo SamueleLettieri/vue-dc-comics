@@ -1,7 +1,9 @@
 <template>
   <div class="ms_margin">
-    <div><img class="ms_img" :src="product.thumb" :alt="product.series"></div>
-    <h5 class="ms_titolo">{{product.series}}</h5>
+    <a href="#">
+        <div><img class="ms_img" :src="product.thumb" :alt="product.series"></div>
+        <h5 class="ms_titolo">{{product.series}}</h5>
+    </a>
   </div>
 </template>
 
@@ -24,6 +26,9 @@ export default {
   margin-bottom: 60px;
 }
 
+a{
+    text-decoration: none;
+}
 .ms_img{
   object-fit: cover;
   object-position: top;
