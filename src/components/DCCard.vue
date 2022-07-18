@@ -1,15 +1,17 @@
 <template>
   <div class="ms_margin">
-    <div><img class="ms_img" :src="imageUrl" alt="title"></div>
-    <h5 class="ms_titolo">{{title}}</h5>
+    <div><img class="ms_img" :src="product.thumb" :alt="product.series"></div>
+    <h5 class="ms_titolo">{{product.series}}</h5>
   </div>
 </template>
 
 <script>
 export default {
     props:{
-        "imageUrl": String,
-        "title": String,
+        "product": {
+            type: Object,
+            require: true,
+        }
     }
 }
 </script>
