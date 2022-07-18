@@ -6,7 +6,7 @@
                 <div>
                     <ul>
                         <li><a href="#">CHARACTERS</a></li>
-                        <li class="active"><a href="#">COMICS</a></li>
+                        <li class="active"><a class="ms_activ-link" href="#">COMICS</a></li>
                         <li><a href="#">MOVIES</a></li>
                         <li><a href="#">TV</a></li>
                         <li><a href="#">GAMES</a></li>
@@ -60,6 +60,10 @@ li{
 .active{
   border-bottom:4px solid $colorplus;
   line-height: normal;
+}
+
+.ms_activ-link{
+    color: $colorplus;
 }
 
 a{
