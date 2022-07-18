@@ -15,7 +15,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+ 
 .ms_margin{
    width: calc((100% / 6) - 30px);
   margin: 0 15px;
